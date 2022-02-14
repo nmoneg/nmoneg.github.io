@@ -1,0 +1,197 @@
+.page-layout {
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 75px 150px 600px 100px;
+  grid-template-areas: 
+  "nav nav nav nav"
+  "hd hd hd hd"
+  "sm pt pt pt"
+  "ft ft ft ft";
+}
+
+.subheader {
+  font-size: 25pt;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #03744e;
+  border-radius: 15px;
+  display: flex;
+  font-size: 17pt;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  list-style: none;
+  color: white;
+}
+
+
+.all-links:link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.all-links:hover {
+  font-size: 110%;
+  color:#29BB89;
+  font-weight: bold;
+}
+
+.all-links:visited {
+  color: inherit;
+}
+
+.search {
+  width: 50%;
+  text-align: right;
+  align-self: center;
+  padding: 0 100px 0 0;
+}
+
+#search-box {
+  height: 30px;
+  border-radius: 10px;
+  font: 20px "Raleway", sans-serif;
+  padding: 0 0 0 15px;
+}
+
+#search-button {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  font: 20px "Raleway", sans-serif;
+}
+
+.all-header-font {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  color: #1E6F5C;
+  text-transform: uppercase;
+}
+
+.header { 
+  grid-area: hd;
+  text-align: center;
+  align-self: center;
+  font-size: 30pt;
+}
+
+.feat {
+  grid-area: sm;
+  display: flex;
+  height: 97%;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid #29BB89;
+  border-radius: 15px;
+  margin: 0px 10px 0px 0px;
+  color: #1E6F5C;
+  font-size: 15pt;
+}
+
+.feat-links {
+  margin: 25px 30px 0 0;
+  list-style: none;
+  line-height: 3;
+}
+
+.social-media {
+  margin: 200px 30px 0 0;
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.posts {
+  grid-area: pt;
+  border: 10px solid #8BDB81;
+  border-radius: 15px;
+}
+
+.posts-hd {
+  margin-left: 80px;
+}
+
+.scroll-box {
+  height: 475px;
+  margin: 1%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 20px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background-color: #E7FBBE;
+  border-radius: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #8BDB81;
+  border-radius: 10px;
+} 
+
+.blog-post-card {
+  border: 1px groove;
+  border-radius: 15px;
+  margin: 1%;
+  width: 25%;
+  padding: 0 1% 1% 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.blog-post-card:hover {
+  background-color: #E7FBBE;
+  opacity: 1;
+}
+
+.post-title {
+  font-size: 20pt;
+}
+
+.card-image {
+  width: 90%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.image-caption {
+  text-align: center;
+}
+
+.post-sum {
+  font-size: 13pt;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.post-link {
+  font-size: 15pt;
+}
+
+.footer {
+  grid-area: ft;
+  background-color: #03744e;
+  border-radius: 15px;
+  margin: 10px 0 0 0;
+}
+
+.footer-text {
+  margin: 25px 0 0 20px;
+  font-size: 20pt;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
